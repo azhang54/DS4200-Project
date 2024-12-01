@@ -3,54 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Project Name</title>
+    <style>
+        /* Boston Celtics Inspired Color Palette */
+        :root {
+            --celtics-green: #007A33;
+            --celtics-white: #FFFFFF;
+            --celtics-silver: #C0C0C0;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--celtics-white);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--celtics-green);
+            color: var(--celtics-white);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: var(--celtics-silver);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--celtics-green);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .title-box {
+            background-color: var(--celtics-green);
+            color: var(--celtics-white);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .visualization {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .visualization img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
-    <div >
-        <h1>DS4200 Project</h1>
-        <h3>Toluwani Adelani, Lucas Menendez, Suraj Swamy, Andrew Zhang</h3>
-    </div>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
 
-    <div>
-        <h2>Introduction</h2>
+    <!-- Home Page (index.html) -->
+    <header>
+        <div class="container">
+            <div class="title-box">
+                <h1>Your Project Title</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Project Introduction</h2>
         <p>
-            We decided to study the shot location of various teams throughout the National Basketball Association. As students in Boston, we feel as though the history the Boston Celtics have accomplished this past season warranted a reason to study the effectiveness of shot locations on a court and how it can correlate to a team’s success. With the Celtics' storied legacy and recent performance, understanding the nuances of basketball strategy, including zone range and action types, has become even more relevant. While the data is not focused on the Celtics alone, it is interesting to research how the different variables in basketball affect the game itself. By analyzing these shot patterns and the contexts in which they are taken, we hope to uncover insights into how modern teams optimize their offense and whether certain trends can be linked to a consistent winning record.
-
+            [Write your project introduction here. Describe the overall topic, 
+            the main objectives, and the significance of your research or project.]
+        </p>
+        <p>
+            Include details about the motivation behind the project, 
+            the key questions you're addressing, and the potential impact of your work.
         </p>
     </div>
-
-    <div>
-        <h2>Dataset</h2>
-        <p>
-            Dataset information: <a href="https://www.kaggle.com/datasets/mexwell/nba-shots/data?select=NBA_2024_Shots.csv">NBA Shots 2024</a>
-
-            We obtained our data from <a href="https://www.kaggle.com/">Kaggle</a>, specifically user mexwell’s NBA Shots datasets which contain NBA players’ regular season shooting data from the 03-04 through 23-24 seasons. Each dataset contains information on every shot taken in a single NBA season, including team, player, position, game information, and various details on the shot itself. For our project, we will be using the dataset from the 23-24 NBA season and focusing on the Celtics’ stats specifically. The entire dataset is 218701 rows by 26 columns and after filtering for just the Celtics, 7396 rows by 26 columns.
-        </p>
-    </div>
-
-    <div>
-        <h2>Data Visualizations</h2>
-    </div>
-
-    <div>
-        <h2>Summary of Findings</h2>
-    </div>
-
-    <div>
-        <h2>References</h2>
-        <p>
-            <ol>
-                <li>Hu, G., Yang, H., Xue, Y., & Dey, D. K. (2023). Zero‐inflated Poisson model with clustered regression coefficients: Application to heterogeneity learning of field goal attempts of professional basketball players. The Canadian Journal of Statistics = La Revue Canadienne de Statistique., 51(1), 157–172. https://doi.org/10.1002/cjs.11684</li>
-                <li>Gong, Hua and Chen, Su. "Estimating positional plus-minus in the NBA" Journal of Quantitative Analysis in Sports, vol. 20, no. 3, 2024, pp. 193-217. https://doi.org/10.1515/jqas-2022-0120</li>
-                <li>
-                    Abbas, N. M. (2019, August 21). NBA Data Analytics: Changing the game. Medium. https://towardsdatascience.com/nba-data-analytics-changing-the-game-a9ad59d1f116
-                </li>
-                <li>
-                    Rubenstein, H. (2023, March 8). By the numbers: Joe Mazzulla’s analytics spreadsheet. CelticsBlog. https://www.celticsblog.com/2023/3/8/23627757/by-the-numbers-head-coach-joe-mazzullas-analytics-spreadsheet-boston-celtics-jayson-tatum 
-                </li>
-            </ol>
-        </p>
-    </div>
-
 </body>
 </html>
